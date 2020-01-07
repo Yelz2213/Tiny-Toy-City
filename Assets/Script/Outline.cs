@@ -42,6 +42,10 @@ namespace cakeslice
         [HideInInspector]
         public Material[] originalMaterials;
 
+        private void Start() {
+            enabled = false;
+        }
+
         private void Awake()
         {
             Renderer = GetComponent<Renderer>();

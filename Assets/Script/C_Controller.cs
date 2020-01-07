@@ -6,6 +6,7 @@ public class C_Controller : MonoBehaviour
 {
     //Speed of movement
     public float Speed;
+    OutlineTrigger outlineTrigger;
 
     void Update()
     {
