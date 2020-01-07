@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class C_Controller : MonoBehaviour
 {
+    //Speed of movement
     public float Speed;
-
 
     void Update()
     {
@@ -18,6 +18,7 @@ public class C_Controller : MonoBehaviour
         //left and right
         float ver = Input.GetAxis("Vertical");
 
+        //Movement
         Vector3 playerMovement = new Vector3(hor, 0f, ver) * Speed * Time.deltaTime;
         transform.Translate(playerMovement, Space.Self);
     }

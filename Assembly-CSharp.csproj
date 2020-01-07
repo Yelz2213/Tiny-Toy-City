@@ -56,6 +56,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\C_Controller.cs" />
+     <Compile Include="Assets\Script\LinkedSet.cs" />
+     <Compile Include="Assets\Script\Outline.cs" />
+     <Compile Include="Assets\Script\OutlineEffect.cs" />
+     <None Include="Assets\Script\Resources\OutlineShader.shader" />
+     <None Include="Assets\Script\Resources\OutlineBufferShader.shader" />
+     <None Include="Assets\3rd Asset\OutlineShader.shader" />
+     <None Include="Assets\3rd Asset\OutlineBufferShader.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>F:/Tiny Toy City/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
