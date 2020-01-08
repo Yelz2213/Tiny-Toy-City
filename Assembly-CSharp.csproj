@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\Item.cs" />
     <Compile Include="Assets\Script\OutlineTrigger.cs" />
     <Compile Include="Assets\Script\PointClick.cs" />
+    <Compile Include="Assets\Script\UIController.cs" />
     <None Include="Assets\3rd Asset\Script\Resources\OutlineShader.shader" />
     <None Include="Assets\3rd Asset\Script\Resources\OutlineBufferShader.shader" />
     <None Include="Assets\3rd Asset\OutlineShader.shader" />

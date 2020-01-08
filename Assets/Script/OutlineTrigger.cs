@@ -8,6 +8,8 @@ public class OutlineTrigger : MonoBehaviour
     private Outline outline;
 
     void Start() {
+        SphereCollider sphereCollider = gameObject.GetComponent<SphereCollider>();
+        sphereCollider.isTrigger = true;
         outline = GetComponent<Outline>();
     }
 

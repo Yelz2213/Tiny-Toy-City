@@ -15,6 +15,7 @@ public class InventoryUI : MonoBehaviour
         inventory.onItemChangedCallback += UpdateUI;
     }
 
+    /*
     void Update()
     {
         if (Input.GetButtonDown("Inventory"))
@@ -23,6 +24,7 @@ public class InventoryUI : MonoBehaviour
             UpdateUI();
         }
     }
+    */
 
     public void UpdateUI()
     {
