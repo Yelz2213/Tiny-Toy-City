@@ -63,13 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3rd Asset\Script\LinkedSet.cs" />
+    <Compile Include="Assets\3rd Asset\Script\Outline.cs" />
+    <Compile Include="Assets\3rd Asset\Script\OutlineEffect.cs" />
     <Compile Include="Assets\Script\C_Controller.cs" />
-    <Compile Include="Assets\Script\LinkedSet.cs" />
-    <Compile Include="Assets\Script\Outline.cs" />
-    <Compile Include="Assets\Script\OutlineEffect.cs" />
+    <Compile Include="Assets\Script\Inventory.cs" />
+    <Compile Include="Assets\Script\InventorySlot.cs" />
+    <Compile Include="Assets\Script\InventoryUI.cs" />
+    <Compile Include="Assets\Script\Item.cs" />
     <Compile Include="Assets\Script\OutlineTrigger.cs" />
-    <None Include="Assets\Script\Resources\OutlineShader.shader" />
-    <None Include="Assets\Script\Resources\OutlineBufferShader.shader" />
+    <Compile Include="Assets\Script\PointClick.cs" />
+    <None Include="Assets\3rd Asset\Script\Resources\OutlineShader.shader" />
+    <None Include="Assets\3rd Asset\Script\Resources\OutlineBufferShader.shader" />
     <None Include="Assets\3rd Asset\OutlineShader.shader" />
     <None Include="Assets\3rd Asset\OutlineBufferShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
@@ -92,6 +97,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>F:/Tiny Toy City/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>F:/Tiny Toy City/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>F:/Tiny Toy City/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

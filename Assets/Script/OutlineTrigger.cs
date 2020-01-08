@@ -11,13 +11,25 @@ public class OutlineTrigger : MonoBehaviour
         outline = GetComponent<Outline>();
     }
 
-    bool isTriggering = false;
+    public bool isTriggering = false;
+
+    void OnMouseEnter()
+    {
+        if (isTriggering == true)
+        {
+            outline.enabled = true;
+        }
+    }
+
+    private void OnMouseExit()
+    {
+            outline.enabled = false;
+    }
 
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player")
         {
             isTriggering = true;
-            outline.enabled = true;
         }
     }
 
@@ -26,7 +38,6 @@ public class OutlineTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             isTriggering = false;
-            outline.enabled = false;
         }
     }
 
