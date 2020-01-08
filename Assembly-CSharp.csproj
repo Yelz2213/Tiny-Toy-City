@@ -67,10 +67,14 @@
     <Compile Include="Assets\3rd Asset\Script\Outline.cs" />
     <Compile Include="Assets\3rd Asset\Script\OutlineEffect.cs" />
     <Compile Include="Assets\Script\C_Controller.cs" />
+    <Compile Include="Assets\Script\Dialogue.cs" />
+    <Compile Include="Assets\Script\DialogueManager.cs" />
+    <Compile Include="Assets\Script\DialogueTrigger.cs" />
     <Compile Include="Assets\Script\Inventory.cs" />
     <Compile Include="Assets\Script\InventorySlot.cs" />
     <Compile Include="Assets\Script\InventoryUI.cs" />
     <Compile Include="Assets\Script\Item.cs" />
+    <Compile Include="Assets\Script\ItemPickup.cs" />
     <Compile Include="Assets\Script\OutlineTrigger.cs" />
     <Compile Include="Assets\Script\PointClick.cs" />
     <Compile Include="Assets\Script\UIController.cs" />

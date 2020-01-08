@@ -7,6 +7,10 @@ public class PointClick : MonoBehaviour
 {
     OutlineTrigger outlineTrigger;
     public GameObject cabinetInventoryUI;
+    public GameObject groundElevatorUI;
+    public GameObject secElevatorUI;
+    public GameObject thrElevatorUI;
+    DialogueTrigger dialogueTriggle;
 
     private void Update()
     {
@@ -22,8 +26,26 @@ public class PointClick : MonoBehaviour
                     if (hit.transform.name == "cabinet") {
                         cabinetInventoryUI.SetActive(true);
                     }
-                    printName(hit.transform.gameObject);
+
+                    if (hit.transform.name == "NPC_Cylinder") {
+                        Debug.Log("asdas");
+                        dialogueTriggle.TriggerDialogue();
+                    }
+
+                    if(hit.transform.name == "Elevator_ground"){
+
+                        groundElevatorUI.SetActive(true);
+                    }
+
+                    if (hit.transform.name == "Elevator_2nd") {
+                        secElevatorUI.SetActive(true);
+                    }
+
+                    if (hit.transform.name == "Elevator_3rd") {
+                        thrElevatorUI.SetActive(true);
+                    }
                 }
+
             }
         }
     }
