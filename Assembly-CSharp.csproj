@@ -66,7 +66,9 @@
     <Compile Include="Assets\3rd Asset\Script\LinkedSet.cs" />
     <Compile Include="Assets\3rd Asset\Script\Outline.cs" />
     <Compile Include="Assets\3rd Asset\Script\OutlineEffect.cs" />
+    <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
     <Compile Include="Assets\Script\C_Controller.cs" />
+    <Compile Include="Assets\Script\ChangeScene.cs" />
     <Compile Include="Assets\Script\Dialogue.cs" />
     <Compile Include="Assets\Script\DialogueManager.cs" />
     <Compile Include="Assets\Script\DialogueTrigger.cs" />
