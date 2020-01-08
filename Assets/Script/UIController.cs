@@ -13,6 +13,17 @@ public class UIController : MonoBehaviour
     public GameObject SecElevator;
     public GameObject ThrElevator;
     public GameObject Player;
+    public GameObject content;
+    public GameObject button_continue;
+    public GameObject button_end;
+    public Text name;
+    public Text content_Text;
+    public int count = 0;
+
+    public void Start()
+    {
+        button_end.SetActive(false);
+    }
 
     public void OpenInventory() {
         Debug.Log("open inventory");
@@ -44,6 +55,7 @@ public class UIController : MonoBehaviour
         ThrElevator.SetActive(false);
     }
 
+    //Elevator func.
     public void TeleportToG() {
         Player.transform.position = new Vector3(6.71f, 0.21f, -0.75f);
         SecElevator.SetActive(false);
@@ -60,5 +72,46 @@ public class UIController : MonoBehaviour
         Player.transform.position = new Vector3(6.71f, 7.99f, -0.75f);
         GroundElevator.SetActive(false);
         SecElevator.SetActive(false);
+    }
+
+    public void EndtheConversation()
+    {
+        content.SetActive(false);
+    }
+
+    public void Conversation()
+    {
+        count++;
+        switch (count) {
+            case 1:
+                name.text = "Mr.Capsule";
+                content_Text.text = "Hi, I am Capsule, I booked a room at 8p.m.";
+                break;
+            case 2:
+                name.text = "Mr.Cylinder";
+                content_Text.text = "Welcome! Mr.Capsult, the fee of double bed room is cost $500.";
+                break;
+            case 3:
+                name.text = "Mr.Capsule";
+                content_Text.text = "All right. Check in please.";
+                break;
+            case 4:
+                name.text = "Mr.Cylinder";
+                content_Text.text = "Here is you keycard. Your room is located at left hand side of second floor";
+                content.SetActive(false);
+                break;
+        }
+
+        if (count > 4)
+        {
+            content.SetActive(true);
+            button_continue.SetActive(false);
+            button_end.SetActive(true);
+            name.text = "Mr.Capsule";
+            content_Text.text = "I don't need to find reception anymore.";
+        }
+
+
+
     }
 }

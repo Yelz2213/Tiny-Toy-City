@@ -10,6 +10,11 @@ public class PointClick : MonoBehaviour
     public GameObject groundElevatorUI;
     public GameObject secElevatorUI;
     public GameObject thrElevatorUI;
+    public GameObject content;
+    public Text name;
+    public Text content_Text;
+    public GameObject conti;
+    public GameObject end;
     DialogueTrigger dialogueTriggle;
 
     private void Update()
@@ -28,8 +33,11 @@ public class PointClick : MonoBehaviour
                     }
 
                     if (hit.transform.name == "NPC_Cylinder") {
-                        Debug.Log("asdas");
-                        dialogueTriggle.TriggerDialogue();
+                        content.SetActive(true);
+                        name.text = "Mr. Cylinder";
+                        content_Text.text = "Welcome to Tiny Toy hotel. How may I help you ?";
+                        conti.SetActive(true);
+                        end.SetActive(false);
                     }
 
                     if(hit.transform.name == "Elevator_ground"){
