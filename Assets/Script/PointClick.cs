@@ -6,14 +6,30 @@ using UnityEngine.UI;
 public class PointClick : MonoBehaviour
 {
     OutlineTrigger outlineTrigger;
-    public GameObject InventoryUI;
+    public GameObject cabinetInventoryUI;
 
-    private void OnClick()
+    private void Update()
     {
-        if (outlineTrigger.isTriggering == true) {
-            Debug.Log("Clicking");
-            InventoryUI.SetActive(true);
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, 100.0f))
+            {
+                if (hit.transform != null)
+                {
+                    if (hit.transform.name == "cabinet") {
+                        cabinetInventoryUI.SetActive(true);
+                    }
+                    printName(hit.transform.gameObject);
+                }
+            }
         }
+    }
+
+    private void printName(GameObject go) {
+        print(go.name);
     }
 
 

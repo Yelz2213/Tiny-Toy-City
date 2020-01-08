@@ -1,15 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class C_Controller : MonoBehaviour
 {
     //Speed of movement
     public float Speed;
     OutlineTrigger outlineTrigger;
+    public int money;
+    public Text Text_money;
+
+    private void Start()
+    {
+        money = 500;
+        Text_money.text = "";
+    }
 
     void Update()
     {
+        Text_money.text = money.ToString();
         PlayerMovement();
     }
 
