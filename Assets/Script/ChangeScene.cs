@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public int scene;
+    public AudioSource clickSound;
     public void changeScene(int scene) {
+        clickSound.Play();
         SceneManager.LoadScene(scene);
     }
 
